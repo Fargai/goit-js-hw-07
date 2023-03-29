@@ -12,10 +12,6 @@ const listGallery = galleryItems.map(item =>
 `).join('');
 
 ulList.insertAdjacentHTML('beforeend', listGallery);
-ulList.addEventListener('click', (event) => {
-    event.preventDefault();
-    
-});
 
 const lightbox = new SimpleLightbox('.gallery a', {
   caption: true,
